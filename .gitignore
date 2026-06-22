@@ -1,0 +1,4 @@
+harvest/
+node_modules/
+.claude/
+.DS_Store
