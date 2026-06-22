@@ -13,7 +13,6 @@ var site = {
   shortName: 'Thomas F. McDaniel',
   role: 'Professor Emeritus of Old Testament Studies and Hebrew',
   institution: 'Palmer Theological Seminary, the Seminary of Eastern University',
-  email: 'tmcdebts1@comcast.net',
   birth: 'March 1, 1931, Baltimore, Maryland',
   tagline: 'A free online library of biblical philology — Hebrew, Aramaic, Syriac, and Arabic studies of the Old and New Testaments.'
 };

@@ -86,9 +86,9 @@ function footer(root){
 '        <a href="' + root + 'resources/">Lexicons &amp; Resources</a>',
 '      </div>',
 '      <div>',
-'        <h4>Contact</h4>',
-'        <a href="mailto:' + site.email + '">' + site.email + '</a>',
+'        <h4>More</h4>',
 '        <a href="' + root + 'about/">Curriculum Vitae</a>',
+'        <a href="' + root + 'writings/">Writings &amp; Reviews</a>',
 '        <a href="' + site.origin + '" rel="nofollow">Original archive</a>',
 '      </div>',
 '    </div>',
@@ -156,7 +156,6 @@ function personLd(){
     'alumniOf':['University of Richmond','University of Pennsylvania','Johns Hopkins University','Eastern Baptist Theological Seminary'],
     'worksFor':{'@type':'CollegeOrUniversity','name':'Palmer Theological Seminary, the Seminary of Eastern University'},
     'knowsAbout':['Hebrew Bible','Old Testament philology','Semitic languages','Aramaic','Syriac','Arabic','Biblical interpretation'],
-    'email':'mailto:' + site.email,
     'url':site.baseUrl + '/about/'
   };
 }
@@ -568,7 +567,6 @@ c.html,
 '            <li><span>Ph.D.</span><span>Johns Hopkins, 1966</span></li>',
 '            <li><span>Field</span><span>OT &amp; Semitics</span></li>',
 '          </ul>',
-'          <div class="btn-row" style="margin-top:1.2rem"><a class="btn btn--ghost btn--sm" href="mailto:' + site.email + '">' + site.email + '</a></div>',
 '        </figure>',
 '      </aside>',
 '      <article class="prose">',
