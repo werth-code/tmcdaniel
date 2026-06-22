@@ -9,6 +9,7 @@ var site = D.site;
 
 var OUT = __dirname;
 var warnings = [];
+var ASSET_VER = '2'; // bump when assets/css/site.css changes to bust caches
 
 /* ---- helpers ------------------------------------------------------------- */
 function esc(s){
@@ -129,7 +130,7 @@ function page(opts){
 '  <meta name="twitter:image" content="' + ogImg + '">',
 '  <link rel="preconnect" href="https://fonts.googleapis.com">',
 '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
-'  <link rel="stylesheet" href="' + opts.root + 'assets/css/site.css">' + jsonld,
+'  <link rel="stylesheet" href="' + opts.root + 'assets/css/site.css?v=' + ASSET_VER + '">' + jsonld,
 '</head>',
 '<body>',
 masthead(opts.root, opts.current),
@@ -607,7 +608,7 @@ lis(cv.experience),
 function build404(){
   var root = '/tmcdaniel/'; // absolute for project-page 404
   var body = [
-'  <section class="wrap" style="text-align:center;padding:7rem 0">',
+'  <section class="wrap" style="text-align:center;padding-top:7rem;padding-bottom:7rem">',
 '    <p class="eyebrow">404</p>',
 '    <h1 style="font-family:var(--display)">This page is not in the codex</h1>',
 '    <p class="lede narrow" style="margin:0 auto">The leaf you sought is missing. Return to the library and begin again.</p>',
@@ -620,7 +621,7 @@ function build404(){
 '  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">',
 '  <title>Page not found — Thomas F. McDaniel Archive</title>',
 '  <meta name="robots" content="noindex">',
-'  <link rel="stylesheet" href="' + root + 'assets/css/site.css">',
+'  <link rel="stylesheet" href="' + root + 'assets/css/site.css?v=' + ASSET_VER + '">',
 '</head>','<body>',
 masthead(root,''),
 '  <main>',body,'  </main>',
