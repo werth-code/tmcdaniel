@@ -267,6 +267,9 @@ var writings = [
 
 var writingsFull = { title: 'Miscellaneous Writings and Reviews — collected (362 pages)', pdf: 'Miscellaneous Writings and Reviews.pdf' };
 
+// Author's own introduction to the five volumes
+var booksIntro = { title: 'Rightly Said, Wrongly Read', subtitle: 'Dr. McDaniel’s own introduction to Volumes I–V', pdf: 'WronglyRead.pdf' };
+
 /* ---- Reference works & collections (linked to the original archive) ------- */
 
 var resources = [
@@ -277,7 +280,7 @@ var resources = [
   { title: 'Golius’ Persian–Latin Lexicon', desc: 'Jacobus Golius’ seventeenth-century Persian–Latin lexicon.', html: 'Persian.html' },
   { title: 'Old Testament Bibliographies', desc: 'Extensive subject bibliographies for Old Testament research.', html: 'OTBibliographies.html' },
   { title: 'The Los Lunas, New Mexico, Decalogue', desc: 'Photographs and links treating the inscribed Decalogue stone of New Mexico.', html: 'loslunas toc.htm' },
-  { title: 'Internet Links for Clergy', desc: 'A large directory of scholarly and ecclesiastical resources on the web.', html: 'clergy-links.html' },
+  { title: 'Internet Links for Clergy', desc: 'A large 1990s&ndash;2000s directory of scholarly and ecclesiastical web resources. Most of these external links are now defunct (the page was last updated in January 2014) and were not carried into this archive.', html: 'clergy-links.html' },
   { title: '1977 Green Lake Missions Conference Bible Studies', desc: 'Bible studies led at the World Mission Conference, Green Lake, Wisconsin.', html: '1977_Green_Lake.html' },
   { title: 'Japan Baptist Union Archives (Dōmei)', desc: 'Photographs, 1958–1961, for the Japan Baptist Union Archives.', html: 'Domei Archives.html' },
   { title: 'Palmer Seminary Archives', desc: 'Archival materials from Palmer Theological Seminary.', html: 'archives/index.htm' }
@@ -338,6 +341,7 @@ var keyEssay = {
 module.exports = {
   site: site,
   books: books,
+  booksIntro: booksIntro,
   sermons: sermons,
   writings: writings,
   writingsFull: writingsFull,
