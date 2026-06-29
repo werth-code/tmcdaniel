@@ -273,7 +273,7 @@ var booksIntro = { title: 'Rightly Said, Wrongly Read', subtitle: 'Dr. McDanielâ
 // Retirement interview. Set `id` to the YouTube video ID once uploaded and the
 // homepage video section renders automatically (privacy-enhanced nocookie embed).
 var video = {
-  id: '', // e.g. 'dQw4w9WgXcQ'  <-- paste the YouTube ID here
+  id: '72OGscbZdHY', // YouTube ID (https://youtu.be/72OGscbZdHY)
   title: 'A Pre-Retirement Interview',
   year: '2001',
   desc: 'Recorded as Dr. McDaniel closed three decades of teaching at Eastern Baptist Theological Seminary, this conversation reflects on a life in ministry, the classroom, and the study of the Hebrew Bible.',
