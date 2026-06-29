@@ -9,7 +9,7 @@ var site = D.site;
 
 var OUT = __dirname;
 var warnings = [];
-var ASSET_VER = '2'; // bump when assets/css/site.css changes to bust caches
+var ASSET_VER = '3'; // bump when assets/css/site.css changes to bust caches
 
 /* ---- helpers ------------------------------------------------------------- */
 function esc(s){
@@ -207,6 +207,37 @@ function buildHome(){
     ]
   };
 
+  // Retirement-interview video section — renders only when a YouTube id is set
+  var V = D.video;
+  var videoSection = '';
+  if(V && V.id){
+    var vTitle = 'Thomas F. McDaniel — ' + V.title + ' (' + V.year + ')';
+    ld['@graph'].push({
+      '@type':'VideoObject','name':vTitle,'description':V.desc,
+      'uploadDate':V.uploadDate,
+      'thumbnailUrl':'https://i.ytimg.com/vi/' + V.id + '/hqdefault.jpg',
+      'embedUrl':'https://www.youtube-nocookie.com/embed/' + V.id,
+      'contentUrl':'https://www.youtube.com/watch?v=' + V.id
+    });
+    videoSection = [
+'  <hr class="rule">',
+'  <section class="wrap">',
+'    <div class="section-head" style="text-align:center">',
+'      <p class="eyebrow">In His Own Words &middot; ' + esc(V.year) + '</p>',
+'      <h2>' + esc(V.title) + '</h2>',
+'      <p class="lede narrow" style="margin:0 auto">' + esc(V.desc) + '</p>',
+'    </div>',
+'    <figure class="video">',
+'      <span class="video__edge"></span>',
+'      <div class="video__frame">',
+'        <iframe src="https://www.youtube-nocookie.com/embed/' + V.id + '?rel=0" title="' + esc(vTitle) + '" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+'      </div>',
+'      <figcaption>' + esc(V.title + ', ' + V.year + '.') + '</figcaption>',
+'    </figure>',
+'  </section>'
+    ].join('\n');
+  }
+
   var body = [
 '  <section class="hero wrap">',
 '    <div class="hero__grid">',
@@ -240,6 +271,7 @@ function buildHome(){
 vols,
 '    </div>',
 '  </section>',
+videoSection,
 '  <hr class="rule">',
 '  <section class="wrap">',
 '    <div class="cards">',

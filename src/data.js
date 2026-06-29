@@ -270,6 +270,16 @@ var writingsFull = { title: 'Miscellaneous Writings and Reviews — collected (3
 // Author's own introduction to the five volumes
 var booksIntro = { title: 'Rightly Said, Wrongly Read', subtitle: 'Dr. McDaniel’s own introduction to Volumes I–V', pdf: 'WronglyRead.pdf' };
 
+// Retirement interview. Set `id` to the YouTube video ID once uploaded and the
+// homepage video section renders automatically (privacy-enhanced nocookie embed).
+var video = {
+  id: '', // e.g. 'dQw4w9WgXcQ'  <-- paste the YouTube ID here
+  title: 'A Pre-Retirement Interview',
+  year: '2001',
+  desc: 'Recorded as Dr. McDaniel closed three decades of teaching at Eastern Baptist Theological Seminary, this conversation reflects on a life in ministry, the classroom, and the study of the Hebrew Bible.',
+  uploadDate: '2001-06-01'
+};
+
 /* ---- Reference works & collections (linked to the original archive) ------- */
 
 var resources = [
@@ -342,6 +352,7 @@ module.exports = {
   site: site,
   books: books,
   booksIntro: booksIntro,
+  video: video,
   sermons: sermons,
   writings: writings,
   writingsFull: writingsFull,
