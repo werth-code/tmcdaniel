@@ -74,7 +74,7 @@ em,i{font-style:italic}
 .script{font-size:1.05em}
 
 /* ---- layout -------------------------------------------------------------- */
-.wrap{width:100%;max-width:72rem;margin:0 auto;padding:0 clamp(1.1rem,4vw,2.5rem)}
+.wrap{width:100%;max-width:72rem;margin:0 auto;padding-left:clamp(1.1rem,4vw,2.5rem);padding-right:clamp(1.1rem,4vw,2.5rem)}
 .narrow{max-width:52rem}
 section{padding-top:clamp(3rem,7vw,5.5rem);padding-bottom:clamp(3rem,7vw,5.5rem)}
 .rule{border:0;height:1px;background:var(--rule);margin:0}

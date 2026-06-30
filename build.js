@@ -9,7 +9,7 @@ var site = D.site;
 
 var OUT = __dirname;
 var warnings = [];
-var ASSET_VER = '4'; // bump when assets/css/site.css changes to bust caches
+var ASSET_VER = '5'; // bump when assets/css/site.css changes to bust caches
 
 /* ---- helpers ------------------------------------------------------------- */
 function esc(s){
