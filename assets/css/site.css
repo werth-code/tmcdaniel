@@ -133,7 +133,7 @@ section{padding-top:clamp(3rem,7vw,5.5rem);padding-bottom:clamp(3rem,7vw,5.5rem)
 .hero__frame{position:absolute;inset:-.7rem;border:1px solid var(--gold-soft);border-radius:3px;pointer-events:none;opacity:.6}
 
 /* video embed (retirement interview) */
-.video{position:relative;max-width:52rem;margin:0 auto}
+.video{position:relative;max-width:52rem;margin:1rem auto 0}
 .video__frame{position:relative;padding-top:56.25%;border:1px solid var(--paper-edge);border-radius:3px;overflow:hidden;box-shadow:var(--shadow-lift);background:#100c08}
 .video__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .video__edge{position:absolute;inset:-.7rem;border:1px solid var(--gold-soft);border-radius:4px;pointer-events:none;opacity:.55}
